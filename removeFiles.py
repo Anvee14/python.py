@@ -4,7 +4,6 @@ import time
 days = 6
 path_file = 'test'
 
-
 def main():
     folders_to_delete = 0
     files_to_delete = 0
