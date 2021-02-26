@@ -20,7 +20,6 @@ def random_set_of_mean(counter):
     mean = statistics.mean(dataset)
     return mean
 
-
 mean_list = []
 for i in range(0, 1000):
     set_of_mean = random_set_of_mean(100)
