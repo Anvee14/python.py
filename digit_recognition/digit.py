@@ -82,7 +82,6 @@ while(True):
       break
   except Exception as e:
     pass
-
 # When everything done, release the capture
 cap.release()
 cv2.destroyAllWindows()

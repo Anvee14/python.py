@@ -3,13 +3,13 @@ import numpy as np
 
 vid = cv2.VideoCapture(0)
 
-img = cv2.imread("blackBg.jpg")
+img = cv2.imread("bg2.jpg")
 
 while(True):
     ret, frame = vid.read()
    
     frame = cv2.resize(frame, (640, 480))
-   # img = cv2.resize(img,(640,480))
+    img = cv2.resize(img,(640,480))
     print(frame)   
     u_black = np.array([104,153,70])
     l_black = np.array([30, 30, 0])
