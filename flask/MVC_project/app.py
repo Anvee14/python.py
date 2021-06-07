@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from classifier import get_pred
+from classifier1 import get_pred
 
 app = Flask(__name__)
 
