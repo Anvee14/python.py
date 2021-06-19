@@ -11,8 +11,9 @@ page = requests.get(Brown_dwarf_url)
 soup = bs(page.text, 'html.parser')
 
 star_table = soup.find_all('table')
+print(len(star_table))
 temp_list = []
-table_rows = star_table.find_all('tr')
+table_rows = star_table[4].find_all('tr')
 for tr in table_rows:
     td = tr.find_all('td')
     row = [i.text.rstrip() for i in td]
